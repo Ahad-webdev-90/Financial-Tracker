@@ -1,0 +1,59 @@
+/* Full screen splash screen */
+.splash-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  color: white;
+  background-color: #282c34;
+  text-align: center;
+  font-family: "Arial", sans-serif;
+}
+
+/* Logo animation */
+.splash-logo {
+  color: #44c7f3;
+  animation: fadeIn 2s ease-in-out;
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+/* Loading bar style */
+.loading-bar {
+  overflow: hidden;
+  width: 80%;
+  height: 5px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: #444;
+}
+
+.progress-bar {
+  width: 0%;
+  height: 100%;
+  background-color: #44c7f3;
+  animation: progress 4s forwards;
+}
+
+/* Fade-in effect for the logo */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Progress bar animation */
+@keyframes progress {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
